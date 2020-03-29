@@ -1,0 +1,205 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 895511999,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "url \u0027https://jsonplaceholder.typicode.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://jsonplaceholder.typicode.com\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "get all users and then get the first user by id",
+        "description": "",
+        "id": "resttest;get-all-users-and-then-get-the-first-user-by-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13883599,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "path \u0027users\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027users\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2470998500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 902300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37578301,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "def first \u003d response[0]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first",
+                  "offset": 4
+                },
+                {
+                  "val": "response[0]",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10782801,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "path \u0027users\u0027, first.id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027users\u0027, first.id",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 481157901,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1897500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "match response.address contains {city:\u0027Gwenborough\u0027}",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response.address",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " {city:\u0027Gwenborough\u0027}",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "RestTest",
+    "description": "",
+    "id": "resttest",
+    "keyword": "Feature",
+    "uri": "src/test/java/Feature/Test.Feature"
+  }
+]
